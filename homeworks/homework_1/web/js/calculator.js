@@ -2,32 +2,33 @@ var res = 0;
 var firstInput = "";
 var symbol = "";
 
-function doCalc(key) {
+function doCalc() {
     with (document.calc) {
-        switch (key) {
+        switch (symbol) {
             case '+':
                 res += parseFloat(firstInput);
-                firstInput = "";
+                firstInput = res;
+                symbol = "";
                 break;
 
             case '-':
                 res -= parseFloat(firstInput);
-                firstInput = "";
+                firstInput = res;
+                symbol = "";
                 break;
 
             case '*':
                 res *= parseFloat(firstInput);
-                firstInput = "";
+                firstInput = res;
+                symbol = "";
                 break;
 
             case '/':
                 res /= parseFloat(firstInput);
-                firstInput = "";
+                firstInput = res;
+                symbol = "";
                 break;
 
-            case '=':
-                firstInput = "";
-                break;
         }
 
         result.value = res;
@@ -42,6 +43,15 @@ function writeNumber(key) {
     }
 }
 
+function writeSymbol(key) {
+    if (symbol) {
+        doCalc();
+    }
+    symbol = key;
+    res = parseFloat(firstInput);
+    firstInput = "";
+}
+
 function resetCalc() {
     res = 0;
     firstInput = "";
@@ -49,5 +59,12 @@ function resetCalc() {
 
     with (document.calc) {
         result.value = "";
+    }
+}
+
+function minusOne() {
+    firstInput = '' + parseFloat(firstInput) * -1;
+    with (document.calc) {
+        result.value = firstInput;
     }
 }
