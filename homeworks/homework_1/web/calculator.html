@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>Калькулятор</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="js/calculator.js"></script>
+</head>
+<body>
+<header><script src="js/header.js"></script></header>
+
+
+<p>
+<form name="calc">
+    <table>
+        <tr>
+            <td colspan="5"><input name="result" style="width: 173px" type="text" disabled value=""></td>
+        </tr>
+        <tr>
+            <td><input onclick="writeNumber(7)" style="width: 30px" type="button" value="7"></td>
+            <td><input onclick="writeNumber(8)" style="width: 30px" type="button" value="8"></td>
+            <td><input onclick="writeNumber(9)" style="width: 30px" type="button" value="9"></td>
+            <td><input onclick="doCalc('/')" style="width: 30px" type="button" value="/"></td>
+            <td><input onclick="resetCalc()" style="width: 30px" type="button" value="C"></td>
+        </tr>
+        <tr>
+            <td><input onclick="writeNumber(4)" style="width: 30px" type="button" value="4"></td>
+            <td><input onclick="writeNumber(5)" style="width: 30px" type="button" value="5"></td>
+            <td><input onclick="writeNumber(6)" style="width: 30px" type="button" value="6"></td>
+            <td><input onclick="doCalc('*')" style="width: 30px" type="button" value="*"></td>
+            <td><input style="width: 30px" type="button" value="&plusmn;"></td>
+        </tr>
+        <tr>
+            <td><input onclick="writeNumber(1)" style="width: 30px" type="button" value="1"></td>
+            <td><input onclick="writeNumber(2)" style="width: 30px" type="button" value="2"></td>
+            <td><input onclick="writeNumber(3)" style="width: 30px" type="button" value="3"></td>
+            <td><input onclick="doCalc('-')"style="width: 30px" type="button" value="-"></td>
+            <td rowspan="2"><input onclick="doCalc('=')" style="width: 30px; height: 50px" type="button" value="="></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input onclick="writeNumber(0)" style="width: 66px" type="button" value="0"></td>
+            <td><input onclick="writeNumber('.')" style="width: 30px" type="button" value="."></td>
+            <td><input onclick="doCalc('+')" style="width: 30px" type="button" value="+"></td>
+        </tr>
+    </table>
+</form>
+</p>
+
+<footer><script src="js/footer.js"></script></footer>
+</body>
+</html>
