@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&subset=cyrillic');
+
+.header {
+    height: 100px;
+    background-color: #FFB6C1;
+}
+
+.footer {
+    height: 100px;
+    background-color: #A9A9A9;
+}
+
+.main {
+    height: calc(100vh - 200px);
+    overflow: hidden;
+
+}
+
+.left-menu {
+    background-color: #ADD8E6;
+    width: 397px;
+    height: calc(100% - 36px);
+    float: left;
+    padding: 18px;
+    position: static;
+}
+
+.right-content {
+    background-color: #98FB98;
+    height: calc(100% - 30px);
+    overflow: auto;
+    font-family: 'Pacifico', cursive;
+    padding: 15px 30px;
+}
+
+.cat-img {
+    width: 100%;
+}
+
+.test-img {
+    width: 100%;
+}
