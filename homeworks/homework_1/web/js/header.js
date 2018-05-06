@@ -13,7 +13,7 @@ document.write("<img src=\"../pictures/frontEndLogo.png\">\n" +
     "            </li>\n" +
     "            <li> <a href=\"calculator.html\">Калькулятор</a> </li>\n" +
     "            <li> <a href=\"test.html\">Тест</a> </li>\n" +
-    "        </ul>")
+    "        </ul>");
 
 
 
