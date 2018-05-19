@@ -1,0 +1,41 @@
+table {
+    border-spacing: 0;
+}
+
+td {
+    height: 100px;
+    width: 100px;
+    background: red;
+}
+
+tr td:last-child {
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+tr:first-child td:first-child {
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+}
+
+tr:last-child td:first-child {
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+tr:nth-child(1) td:nth-child(2){
+    border-top-left-radius: 50%;
+}
+
+tr:nth-child(3) td:nth-child(2){
+    border-bottom-left-radius: 50%;
+}
+
+.blue_td {
+    background: blue;
+}
+
+.circle {
+    border-radius: 100%!important;
+}
+
