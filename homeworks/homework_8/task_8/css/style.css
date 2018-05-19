@@ -1,0 +1,38 @@
+div {
+    width: 200px;
+    height: 200px;
+    outline-offset: -15px;
+}
+
+.first, .fourth {
+    outline: 8px dotted red;
+}
+
+.second, .third {
+    outline: 8px dashed blue;
+}
+
+.first {
+    background-image: repeating-radial-gradient(at bottom right, black, white 25px);
+}
+
+.second {
+    background-image: repeating-radial-gradient(at bottom left, white, black 25px);
+}
+
+.third {
+    background-image: repeating-radial-gradient(at top right, white, black 25px);
+}
+
+.fourth {
+    background-image: repeating-radial-gradient(at top left, black, white 25px);
+}
+
+.first, .third {
+    float: left;
+}
+
+.second, .fourth {
+    margin-left: 200px;
+}
+
